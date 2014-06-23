@@ -22,6 +22,7 @@ public class ShowclixDownloader {
     for (int a = 0; a < args.length; a++) {
       if (args[a].startsWith("server:")) {
         setup.setServerAddress(args[a].substring(7));
+      } else if (args[a].equals("noupdate")) {
       }
     }
     setup.setVisible(true);
